@@ -1,0 +1,101 @@
+/* =========================
+   Variáveis de Cores
+   ========================= */
+:root {
+    --primary: #dd0b0b;
+    --secondary: #f4a261;
+    --dark: #000000;
+}
+
+/* =========================
+   Utilitários Gerais
+   ========================= */
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* =========================
+   Hero Section
+   ========================= */
+.hero-section {
+    background: url('https://images.unsplash.com/photo-1586190848861-99aa4a171e90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 150px 0;
+    position: relative;
+}
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* =========================
+   Botões
+   ========================= */
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+.btn-outline-primary {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+.btn-outline-primary:hover {
+    background-color: var(--primary);
+    color: #fff;
+}
+.btn-danger {
+    background-color: #dd0b0b !important;
+    border-color: #dd0b0b !important;
+}
+.btn-danger:hover, .btn-danger:focus {
+    background-color: #b50909 !important;
+    border-color: #b50909 !important;
+}
+
+/* =========================
+   Cards do Cardápio
+   ========================= */
+.card-menu {
+    transition: transform 0.3s;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.card-menu:hover {
+    transform: translateY(-10px);
+}
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+.price-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--primary);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.card-menu .card-body .fw-bold {
+    color: #000 !important;
+}
+
+/* =========================
+   Depoimentos
+   ========================= */
+.testimonial-card {
+    border-left: 4px solid var(--primary);
+}

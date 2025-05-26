@@ -1,0 +1,38 @@
+[
+  {
+    "nome": "Delícia Burger",
+    "descricao": "Hambúrguer artesanal com queijo, alface, tomate e molho especial.",
+    "preco": "R$ 29,90",
+    "imagem": "img/lanches/produto1.jpg"
+  },
+  {
+    "nome": "Bacon Crazy",
+    "descricao": "Hambúrguer duplo com bacon crocante e cheddar.",
+    "preco": "R$ 34,90",
+    "imagem": "img/lanches/produto2.jpg"
+  },
+  {
+    "nome": "Frango Crocante",
+    "descricao": "Peito de frango empanado com maionese temperada.",
+    "preco": "R$ 27,90",
+    "imagem": "img/lanches/produto3.jpg"
+  },
+  {
+    "nome": "Veggie Delight",
+    "descricao": "Hambúrguer vegetariano com grão-de-bico e molho de iogurte.",
+    "preco": "R$ 25,90",
+    "imagem": "img/lanches/produto4.jpg"
+  },
+  {
+    "nome": "Batata Frita",
+    "descricao": "Porção de batatas fritas crocantes.",
+    "preco": "R$ 12,90",
+    "imagem": "img/lanches/produto5.jpg"
+  },
+  {
+    "nome": "Onion Rings",
+    "descricao": "Anéis de cebola empanados e fritos.",
+    "preco": "R$ 14,90",
+    "imagem": "img/lanches/produto6.jpg"
+  }
+]

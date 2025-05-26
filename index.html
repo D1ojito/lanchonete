@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delícia Burger - A Melhor Lanchonete da Cidade</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Seu CSS personalizado -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <!--Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-egg-fried me-2"></i>Delícia Burger
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Cardápio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#promo">Promoções</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link position-relative" href="#" id="btn-carrinho" data-bs-toggle="modal" data-bs-target="#modalCarrinho">
+                            <i class="bi bi-cart-fill"></i> Carrinho
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="carrinho-quantidade" style="font-size:0.75em;display:none;">
+                                0
+                            </span>
+                        </a>
+                    </li>    
+                    <a class="nav-link btn btn-primary ms-2" href="tel:+5511999999999">
+                        <i class="bi bi-telephone"></i> Pedir Agora
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container hero-content text-center">
+            <h1 class="display-4 fw-bold mb-4">Os Melhores Lanches da Região!</h1>
+            <p class="lead mb-5">Hambúrgueres artesanais, porções gigantes e sabores incríveis.</p>
+            <div class="d-flex gap-3 justify-content-center">
+                <a href="#menu" class="btn btn-primary btn-lg px-4">
+                    <i class="bi bi-menu-up"></i> Ver Cardápio
+                </a>
+                <a href="tel:+5511999999999" class="btn btn-outline-light btn-lg px-4">
+                    <i class="bi bi-telephone"></i> (11) 99999-9999
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--Sobre -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="img/logo/logo.jpg" 
+                         alt="Interior da lanchonete" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-4">Desde 2010 servindo qualidade</h2>
+                    <p class="lead">Nossa paixão é criar experiências gastronômicas memoráveis.</p>
+                    <p>Usamos ingredientes frescos e selecionados para garantir o melhor sabor em cada mordida. Todos os nossos hambúrgueres são preparados na hora, com pães caseiros e molhos exclusivos.</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-light">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i> Ambiente familiar e acolhedor
+                        </li>
+                        <li class="list-group-item bg-light">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i> Atendimento rápido e delivery eficiente
+                        </li>
+                        <li class="list-group-item bg-light">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i> Aberto todos os dias até tarde
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cardápio -->
+    <section id="menu" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+            <h2 class="fw-bold">Nosso Cardápio</h2>
+            <p class="lead">Os favoritos dos clientes</p>
+            </div>
+            <div class="row g-4" id="cardapio-container">
+            <!-- Itens serão injetados via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!--Promoções -->
+    <section id="promo" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Promoções Imperdíveis</h2>
+                <p class="lead">Aproveite nossas ofertas especiais</p>
+            </div>
+            <div class="row">
+                <!-- Promoções serão injetadas via JavaScript -->
+            </div>
+        </div>
+    </section>
+    <!-- Localização/Contato -->
+    <section id="contact" class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h3 class="fw-bold mb-4">Venha nos visitar</h3>
+                    <div class="mb-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0754267452926!2d-46.6534265!3d-23.5656782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1689296818782!5m2!1spt-BR!2sbr" 
+                                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="rounded shadow"></iframe>
+                    </div>
+                    <address>
+                        <strong><i class="bi bi-geo-alt-fill"></i> Endereço:</strong> Av. Paulista, 1000 - São Paulo/SP<br>
+                        <strong><i class="bi bi-clock-fill"></i> Horário:</strong> Seg-Sex: 11h-23h | Sáb-Dom: 11h-00h
+                    </address>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="fw-bold mb-4">Faça seu pedido</h3>
+                    <div class="d-grid gap-3">
+                        <a href="tel:+5511999999999" class="btn btn-primary btn-lg">
+                            <i class="bi bi-telephone"></i> (11) 99999-9999
+                        </a>
+                        <a href="https://wa.me/5511999999999" class="btn btn-success btn-lg">
+                            <i class="bi bi-whatsapp"></i> WhatsApp
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-lg">
+                            <i class="bi bi-instagram"></i> Instagram
+                        </a>
+                    </div>
+                        <form>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer -->
+    <footer class="bg-black text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="fw-bold">
+                        <i class="bi bi-egg-fried me-2"></i>Delícia Burger
+                    </h5>
+                    <p>A melhor experiência em lanches artesanais da cidade!</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="fw-bold">Horários</h5>
+                    <ul class="list-unstyled">
+                        <li>Segunda a Sexta: 11h - 23h</li>
+                        <li>Sábado: 11h - 00h</li>
+                        <li>Domingo: 11h - 00h</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Redes Sociais</h5>
+                    <div class="d-flex gap-3 fs-4">
+                        <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2023 Delícia Burger. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Carrinho -->
+<div class="modal fade" id="modalCarrinho" tabindex="-1" aria-labelledby="modalCarrinhoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalCarrinhoLabel"><i class="bi bi-cart-fill"></i> Carrinho</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <div id="carrinho-itens"></div>
+        <hr>
+        <h6>Formas de pagamento:</h6>
+        <div class="mb-3">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="pagamento" id="pagamentoPix" value="Pix" checked>
+            <label class="form-check-label" for="pagamentoPix">Pix</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="pagamento" id="pagamentoCartao" value="Cartão">
+            <label class="form-check-label" for="pagamentoCartao">Cartão de crédito</label>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="pagamento" id="pagamentoCartao" value="Cartão">
+            <label class="form-check-label" for="pagamentoCartao">Cartão de débito</label>
+          </div>  
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <span class="fw-bold me-auto" id="carrinho-total"></span>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary" id="finalizar-pedido">Finalizar Pedido</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Bootstrap 5 JS (Bundle with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

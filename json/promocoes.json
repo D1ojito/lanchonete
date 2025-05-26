@@ -1,0 +1,16 @@
+[
+  {
+    "titulo": "Combo Família",
+    "descricao": [
+      "4 Delícia Burgers",
+      "2 Batatas Turbinadas",
+      "2 Refrigerantes 1L",
+      "1 Sorvete de Brinde"
+    ],
+    "preco": "R$ 89,90",
+    "imagem": "img/promoções/combo-familia.jpg",
+    "badge": "LIMITADO",
+    "cor": "danger"
+  }
+  
+]
