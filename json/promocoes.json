@@ -11,6 +11,30 @@
     "imagem": "img/promoções/combo-familia.jpg",
     "badge": "LIMITADO",
     "cor": "danger"
+  },
+  {
+    "titulo": "Combo Duplo",
+    "descricao": [
+      "2 Bacon Crazy",
+      "1 Onion Rings",
+      "2 Refrigerantes 600ml"
+    ],
+    "preco": "R$ 59,90",
+    "imagem": "img/promoções/combo-duplo.jpg",
+    "badge": "ESPECIAL",
+    "cor": "warning"
+  },
+  {
+    "titulo": "Combo Vegano",
+    "descricao": [
+      "2 Veggie Delight",
+      "1 Batata Frita Grande",
+      "1 Suco Natural"
+    ],
+    "preco": "R$ 49,90",
+    "imagem": "img/promoções/combo-vegano.jpg",
+    "badge": "LIMITADO",
+    "cor": "success"
   }
   
 ]
