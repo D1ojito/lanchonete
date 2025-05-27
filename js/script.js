@@ -176,7 +176,7 @@ document.getElementById('finalizar-pedido').addEventListener('click', function (
     }
 
     // Número do WhatsApp da loja (substitua pelo seu número)
-    const numero = '5592994906642';
+    const numero = '5592999999999';
     const url = `https://wa.me/${numero}?text=${mensagem}`;
 
     window.open(url, '_blank');
