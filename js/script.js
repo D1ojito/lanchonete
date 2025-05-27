@@ -151,3 +151,33 @@ function adicionarAoCarrinho(produto) {
   }
   atualizarBadgeCarrinho();
 }
+
+document.getElementById('finalizar-pedido').addEventListener('click', function () {
+    if (carrinho.length === 0) {
+        alert('Seu carrinho está vazio!');
+        return;
+    }
+
+    // Monta a mensagem do pedido
+    let mensagem = '*Pedido Delícia Burger*%0A%0A';
+    carrinho.forEach(item => {
+        mensagem += `🍔 *${item.nome}* x${item.qtd} - ${item.preco}%0A`;
+    });
+    const total = carrinho.reduce((sum, item) => {
+        const preco = parseFloat(item.preco.replace('R$', '').replace(',', '.'));
+        return sum + preco * item.qtd;
+    }, 0);
+    mensagem += `%0A*Total:* R$ ${total.toFixed(2)}%0A`;
+
+    // Forma de pagamento selecionada
+    const pagamento = document.querySelector('input[name="pagamento"]:checked');
+    if (pagamento) {
+        mensagem += `%0A*Pagamento:* ${pagamento.labels[0].innerText}`;
+    }
+
+    // Número do WhatsApp da loja (substitua pelo seu número)
+    const numero = '5592994906642';
+    const url = `https://wa.me/${numero}?text=${mensagem}`;
+
+    window.open(url, '_blank');
+});
