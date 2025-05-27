@@ -8,7 +8,6 @@
       "1 Sorvete de Brinde"
     ],
     "preco": "R$ 89,90",
-    "imagem": "img/promoções/combo-familia.jpg",
     "badge": "LIMITADO",
     "cor": "danger"
   },
@@ -20,7 +19,6 @@
       "2 Refrigerantes 600ml"
     ],
     "preco": "R$ 59,90",
-    "imagem": "img/promoções/combo-duplo.jpg",
     "badge": "ESPECIAL",
     "cor": "warning"
   },
@@ -32,7 +30,6 @@
       "1 Suco Natural"
     ],
     "preco": "R$ 49,90",
-    "imagem": "img/promoções/combo-vegano.jpg",
     "badge": "LIMITADO",
     "cor": "success"
   }
